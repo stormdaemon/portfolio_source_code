@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+body {
+    overflow: hidden;
+    background: black;
+    font-family: "Oswald", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    font-size: 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.navbar nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav li {
+    list-style: none;
+    margin-right: 1.25rem;
+    flex-shrink: 0;
+}
+
+.navbar nav li:last-child {
+    margin-right: 0;
+}
+
+.navbar li a {
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbar li a:hover {
+    color: #f5a142;
+}
+
+.navbar-brand {
+    flex-shrink: 0;
+    margin-right: 3.125rem;
+    font-size: 3rem;
+}
+
+.profil-picture {
+    position: absolute;
+    right: 1.5rem;
+    padding: 1.5rem;
+    top: 50%;
+    width: 3.4375rem;
+    height: 3.4375rem;
+    background-size: cover;
+    background-position: top;
+    background-image: url("../assets/profile.png");
+    transform: translateY(-50%);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 0.125rem solid #f5a142;
+}
+
+section {
+    height: calc(100vh - 7.5rem);
+    padding-top: 15%;
+    margin-bottom: 10%;
+}
+
+section#portfolio {
+    padding-top: 6%;
+}
+
+section#contact {
+    padding-top: 0%;
+}
+
+.accueil {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 80%;
+}
+
+h2 {
+    display: block;
+    margin-bottom: 1.25rem;
+    font-size: 2.5rem;
+    color: #f5a142;
+    background: transparent;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.portfolio {
+    margin-left: 4%;
+    max-height: 100%;
+}
+
+.portfolio {
+    margin-left: 4%;
+    max-height: 100%;
+}
+
+.bencode,
+.xbbo,
+.hpixel {
+    padding: 1.25rem;
+    border-radius: 3.125rem;
+}
+
+.bencode {
+    max-width: 15%;
+}
+
+.xbbo {
+    max-width: 35%;
+}
+
+.hpixel {
+    max-width: 20%;
+}
+
+.github-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+    margin-top: -3%;
+}
+
+.github {
+    display: inline-block;
+    margin-right: 1.25rem;
+    font-size: 1.25rem;
+}
+
+.github a {
+    transition: color 0.3s;
+}
+
+.github a:hover {
+    color: #f5a142;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 100%;
+}
+
+.contact h2 {
+    z-index: 1;
+}
+
+.contact-form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.625rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-left: 0.625rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    margin-top: -8%;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+}
+
+.contact-form textarea {
+    max-height: 14.063rem !important;
+    max-width: 22.688rem;
+    overflow: hidden;
+}
+
+.contact-form input,
+textarea:focus {
+    outline: none;
+}
+
+input,
+textarea {
+    background: rgba(145, 129, 129, 0.2);
+    border-radius: 3.125rem;
+    border: none;
+    margin: 0.625rem;
+}
+
+textarea {
+    resize: none;
+    height: auto;
+}
+
+button {
+    background: rgba(167, 167, 167, 0.2);
+    border-radius: 1.25rem;
+    padding: 0.625rem;
+    border: none;
+    height: 3.063rem;
+    width: 7.563rem;
+    transition: background-color 0.3s;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    width: 22.688rem;
+    height: 3.25rem;
+    max-width: 22.688rem;
+    background: rgba(145, 129, 129, 0.2);
+    border-radius: 3.125rem;
+    padding: 0.625rem;
+}
+
+button:hover {
+    background: #d38b38;
+    color: white;
+}
+
+button:focus {
+    outline: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expanded-image {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    z-index: 9999;
+}
+
+.contact-form textarea {
+    padding: 1.25rem;
+}
+
+.send {
+    background: transparent;
+    margin-left: 0.625rem;
+    margin-top: 0.063rem;
+}
+
+span {
+    background: transparent;
+    font-size: 1.25rem;
+}
+
+button {
+    padding: 0;
+}
+
+footer {
+    margin-top: -15%;
+    text-align: center;
+}
+
+footer svg {
+    margin-top: 5px;
+    margin-left: 5px;
+    transition: stroke 0.3s;
+}
+
+footer svg:hover {
+    stroke: #f5a142;
+}
+
+footer a {
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #f5a142;
+}
+
+.swal2-image {
+    width: 50%;
+    height: auto;
+}
+
+/* Media queries */
+@media (max-width: 1480px) {
+    :root {
+        font-size: 0.75rem;
+    }
+
+    .profil-picture {
+        width: 3.4375rem;
+        height: 3.4375rem;
+    }
+
+    .bencode,
+    .xbbo,
+    .hpixel {
+        padding: 1.25rem;
+        border-radius: 1.875rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .navbar li a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    :root {
+        font-size: 10px;
+    }
+
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .navbar-brand {
+        margin-right: 1rem;
+        font-size: 2.5rem;
+    }
+
+    .navbar nav li {
+        margin-right: 0.75rem;
+    }
+
+    section#portfolio {
+        padding-top: 10%;
+    }
+
+    section#contact {
+        padding-top: 5%;
+    }
+
+    footer {
+        margin-top: -20%;
+    }
+}
+
+@media (max-width: 900px) {
+    .contact-form {
+        margin-top: auto;
+    }
+
+    body {
+        touch-action: pan-x pan-y;
+        overflow: hidden;
+        user-scalable: no;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        font-size: 10px;
+    }
+
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .navbar-brand {
+        margin-right: 1rem;
+        font-size: 2.5rem;
+    }
+
+    .navbar nav li {
+        margin-right: 0.75rem;
+    }
+
+    .contact-form {
+        margin-top: -35%;
+    }
+}
