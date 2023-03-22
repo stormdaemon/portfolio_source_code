@@ -10,6 +10,8 @@ J'ai utilisé les technologies suivantes pour créer ce portfolio :
 HTML5
 CSS3
 JavaScript
+PHP - Laravel
+
 Comment naviguer sur mon portfolio
 Mon portfolio est divisé en plusieurs sections, qui sont :
 
@@ -23,8 +25,8 @@ Vous pouvez naviguer entre les différentes sections en utilisant le menu de nav
 Si vous souhaitez exécuter mon portfolio localement, vous pouvez suivre ces étapes :
 
 Clonez le dépôt GitHub sur votre ordinateur en utilisant la commande suivante dans votre terminal :
-bash
-`git clone `
+
+`git clone https://github.com/stormdaemon/portfolio_source_code.git`
 
 Comment me contacter
 Si vous avez des questions ou des commentaires sur mon portfolio, vous pouvez me contacter à l'adresse e-mail suivante : tlafont49@gmail.com
